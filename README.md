@@ -16,13 +16,13 @@
 
 ## References
 **Custom Elements**
-https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements
+* https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements
 
 **Mocha & Puppeteer**
-https://mochajs.org/
-https://medium.com/@ankit_m/ui-testing-with-puppeteer-and-mocha-part-1-getting-started-b141b2f9e21
-https://medium.com/@dpark/ui-testing-with-puppeteer-and-mocha-8a5c6feb3407
-https://www.npmjs.com/package/mocha-puppeteer
+* https://mochajs.org/
+* https://medium.com/@ankit_m/ui-testing-with-puppeteer-and-mocha-part-1-getting-started-b141b2f9e21
+* https://medium.com/@dpark/ui-testing-with-puppeteer-and-mocha-8a5c6feb3407
+* https://www.npmjs.com/package/mocha-puppeteer
 
 ---
 
