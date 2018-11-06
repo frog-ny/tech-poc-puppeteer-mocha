@@ -1,0 +1,29 @@
+{
+  "name": "tech-poc-puppeteer-mocha",
+  "version": "1.0.0",
+  "description": "The goal of this POC is to be able to test .js on a webpage using Mocha and Puppeteer.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha test/bootstrap.js --recursive test",
+    "server": "http-server -c-1 test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frog-ny/tech-poc-puppeteer-mocha.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/frog-ny/tech-poc-puppeteer-mocha/issues"
+  },
+  "homepage": "https://github.com/frog-ny/tech-poc-puppeteer-mocha#readme",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "lodash": "^4.17.11",
+    "mocha": "^5.2.0",
+    "puppeteer": "^1.10.0"
+  }
+}
