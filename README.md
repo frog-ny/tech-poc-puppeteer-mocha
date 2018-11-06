@@ -6,20 +6,30 @@
 
 > Prerequisites: [docker](https://store.docker.com/editions/community/docker-ce-desktop-mac)
 
-**1. Build the docker image and container:**
-  `. build.sh`
+1. Build the docker image and container:
+```sh
+. build.sh
+```
 
-**2. Start the container and attach to it:**
-  `docker start puppeteer-mocha-poc && docker attach puppeteer-mocha-poc`
+2. Start the container and attach to it:
+```sh
+docker start puppeteer-mocha-poc && docker attach puppeteer-mocha-poc
+```
  
-**3. Install dependencies**
-  `npm install` or just `npm i`
+3. Install dependencies
+```sh
+npm install
+```
 
-**4. Start the server**
-  `npm run forever`
+4. Start the server
+```sh
+npm run forever
+```
 
-**3. Run the test script:**
-  `npm run test` or just `npm test`
+5. Run the test script:
+```sh
+npm run test
+```
 
 ## Acceptance Criteria
 
