@@ -4,14 +4,11 @@ RUN apt-get update && apt-get -y install \
     vim \
     curl \
     bash \
-    nano \
-    tree \
-    git \
-    libfontconfig
+    git
 
 USER root
 
-RUN npm install -g http-server
+RUN npm i -g http-server
 
 # ability to run puppeteer inside a Docker container
 # https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md#running-puppeteer-in-docker
@@ -33,9 +30,9 @@ RUN chmod +x /usr/local/bin/dumb-init
 RUN mkdir /www
 RUN chmod 777 /www
 
-# Expose port
-EXPOSE 3000
-
 # Run with bash
 WORKDIR /www
 CMD ["/bin/bash"]
+
+# Expose port
+EXPOSE 3000

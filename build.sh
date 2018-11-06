@@ -2,7 +2,7 @@
 imageName=web-image
 containerName=puppeteer-mocha-poc
 
-docker build -t $imageName -f Dockerfile  .
+docker build --no-cache -t $imageName -f Dockerfile  .
 
 echo Delete old container...
 docker rm -f $containerName
