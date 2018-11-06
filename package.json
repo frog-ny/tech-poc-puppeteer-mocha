@@ -8,7 +8,8 @@
   },
   "scripts": {
     "test": "mocha test/bootstrap.js --recursive test",
-    "server": "http-server -c-1 test"
+    "server": "http-server -c-1 test",
+    "forever": "http-server . > http.log 2>&1 &"
   },
   "repository": {
     "type": "git",
