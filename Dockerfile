@@ -1,6 +1,7 @@
 FROM node:latest
 
 RUN apt-get update && apt-get -y install \
+    vim \
     curl \
     bash \
     nano \
@@ -10,12 +11,7 @@ RUN apt-get update && apt-get -y install \
 
 USER root
 
-RUN npm install -g \
-    gulp \
-    express-generator \
-    rollup
-
-RUN npm -g --unsafe-perm install http-server
+RUN npm install -g http-server
 
 # ability to run puppeteer inside a Docker container
 # https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md#running-puppeteer-in-docker
