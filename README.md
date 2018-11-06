@@ -2,15 +2,34 @@
 
 > The goal of this POC is to be able to test .js on a webpage using Mocha and Puppeteer.
 
+## Instructions to Reproduce the POC 
+
+> Prerequisites: [docker](https://store.docker.com/editions/community/docker-ce-desktop-mac)
+
+**1. Build the docker image and container:**
+  `. build.sh`
+
+**2. Start the container and attach to it:**
+  `docker start puppeteer-mocha-poc && docker attach puppeteer-mocha-poc`
+ 
+**3. Install dependencies**
+  `npm install` or just `npm i`
+
+**4. Start the server**
+  `npm run forever`
+
+**3. Run the test script:**
+  `npm run test` or just `npm test`
+
 ## Acceptance Criteria
 
-- [ ] Project includes an empty `custom element` in the `src` directory. It needs some dummy logic to make it testable.
-- [ ] Project has an `index.html` file in the `test` directory that references the custom element.
+- [x] Project includes an empty `custom element` in the `src` directory. It needs some dummy logic to make it testable.
+- [x] Project has an `index.html` file in the `test` directory that references the custom element.
 - [ ] Project needs a mocha test spec to run 2-3 tests on the element.
-- [ ] All 3rd party deps need to be managed via `npm`. No copy/pasted libs in `src` or `test`
-- [ ] All setup and teardown of the tests should be able to run via `npm run test`
+- [x] All 3rd party deps need to be managed via `npm`. No copy/pasted libs in `src` or `test`
+- [x] All setup and teardown of the tests should be able to run via `npm run test`
 - [ ] Document all steps to setup and reproduce the POC
-- [ ] Use the Dockerfile (see instructions below)
+- [x] Use the Dockerfile (see instructions below)
 
 ---
 
