@@ -15,7 +15,7 @@ RUN npm install -g \
     express-generator \
     rollup
 
-RUN npm -g --unsafe-perm install node-sass
+RUN npm -g --unsafe-perm install http-server
 
 # ability to run puppeteer inside a Docker container
 # https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md#running-puppeteer-in-docker
@@ -38,7 +38,7 @@ RUN mkdir /www
 RUN chmod 777 /www
 
 # Expose port
-EXPOSE 5000
+EXPOSE 3000
 
 # Run with bash
 WORKDIR /www
