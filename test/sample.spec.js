@@ -6,7 +6,7 @@ describe('sample test', function() {
   before (async function() {
     this.timeout(5000);
     page = await browser.newPage();
-    await page.goto('http://localhost:3000/test'); # needs to map to the http-server and exposed port
+    await page.goto('http://localhost:3000/test'); // needs to map to the http-server and exposed port
   });
 
   after (async () => {
