@@ -1,6 +1,3 @@
-const template = document.createElement('template');
-
-
 class Counter extends HTMLElement {
   static get observedAttributes() {
     return ['data-foo', 'value'];
@@ -8,9 +5,6 @@ class Counter extends HTMLElement {
 
   constructor(){
     super();
-
-    // console.log(this.appendChild);
-
     this.increment = this.increment.bind(this);
   }
 
