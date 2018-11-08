@@ -10,5 +10,8 @@ node_modules
 bower_components
 .tmp
 
+#vim
+*.swp
+
 # project specific
 .env
