@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "mocha test/bootstrap.js --recursive test",
+    "test": "mocha test/bootstrap.js --recursive test --timeout 10000",
     "server": "http-server -c-1 test -p 3000",
     "forever": "http-server -c-1 -p 3000 . > http.log 2>&1 &"
   },
